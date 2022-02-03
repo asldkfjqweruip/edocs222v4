@@ -45,4 +45,4 @@ class TestAdminPanel:
             - reopen card delete created task type
             - validate created task type is deleted"""
         admin_panel = prepare_page.go_to_admin()
-        admin_panel.task_type()
+        #admin_panel.task_type()
