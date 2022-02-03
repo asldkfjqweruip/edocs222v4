@@ -1,0 +1,11 @@
+pytest==6.2.5
+selenium==4.1.0
+webdriver_manager==3.5.2
+# pytest --alluredir=reports (reports is any directory name)
+# allure serve reports
+allure_pytest==2.9.45
+requests==2.27.1
+pytest-xdist==2.5.0 #pytest -n 4
+pytest-rerunfailures==10.2 #pytest --reruns 3
+virtualenv==20.13.0
+pip==22.0.3
