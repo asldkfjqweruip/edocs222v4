@@ -26,13 +26,8 @@ class BasePage:
 
     def button_click(self, locator, by=By.XPATH):
         """Click button"""
-        click = self.wait_until_find_element(by=by, value=locator)
+        click = self.visibility_of_element_located(by=by, value=locator)
         click.click()
-
-    def check_click(self, value):
-        self.wait_until_element_clickable(mark=value).click()
-
-
 
 
     def wait_until_find_element(self, value, by=By.XPATH):
@@ -41,8 +36,8 @@ class BasePage:
     def visibility_of_element_located(self, value, by=By.XPATH):
         return self.wait.until(EC.visibility_of_element_located(locator=(by, value)))
 
-    def wait_until_element_clickable(self, mark):
-        return self.wait.until(EC.element_to_be_clickable(mark))
+    def wait_until_element_clickable(self, value, by=By.XPATH):
+        return self.wait.until(EC.element_to_be_clickable(locator=(by, value)))
 
     def element_is_not(self, value, by=By.XPATH):
         return self.wait.until_not(EC.presence_of_element_located(locator=(by, value)))
