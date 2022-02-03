@@ -5,7 +5,7 @@ class AdminPanelConstants:
     TASKTYPS = '//*[@href="#!/admin/taskTypes"]'
     CREATETASKTYPS = '//*[@id="registry-splitting-container"]/section/ui-view/div/div[2]/a'
     TTFIELD = '/html/body/div[4]/md-dialog/form/md-dialog-content/md-input-container[1]/input'
-    TEXT = f'автотест поле {str(datetime.today())}'
+    TEXT = f'автотест поле {str(datetime.now())}'
     BUTTONSAVE = './/*[@class="btn save-button"]'
     REOPENCRATED = f'//*[text()="{TEXT}"]'
     DELETE = '//*[class="btn btn-danger delete-button"]'
