@@ -26,7 +26,7 @@ class BasePage:
 
     def button_click(self, locator, by=By.XPATH):
         """Click button"""
-        click = self.visibility_of_element_located(by=by, value=locator)
+        click = self.wait_until_find_element(by=by, value=locator)
         click.click()
 
     def check_click(self, value):
